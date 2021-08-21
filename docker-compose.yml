@@ -22,11 +22,11 @@ services:
       - SESSION_COOKIE_SECURE=True
       - SECURE_HSTS_PRELOAD=True
     volumes:
-      - ./project:/home/app/web
+      - ./back:/home/app/web
       - eq_static_volume:/home/app/web/static
       - eq_media_volume:/home/app/web/uploads
     ports:
-      - "10000:8000"
+      - "11000:11000"
     stdin_open: true
   db:
     image: "postgres:13.3"
