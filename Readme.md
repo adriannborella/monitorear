@@ -1,7 +1,18 @@
-Projecto utilizado para controlar las ganancias de mis inversiones
+Projecto pensado para monitorear archivos
 
-Utiliza pandas para obtener datos de algunas pagina web para actualizar cotizaciones.
+cuenta con una parte Front y una back.
 
-Tambien tiene un comando para cargar los indices de IPC.
+## Front
 
-Muestra un grafico de la inflación.
+Es un script que se instala en el cliente
+se debe configurar los archivos  que debe monitorear
+
+Luego se debe crear una tarea programada cada X tiempo para correr y ejecutar el script.
+
+Dicho script informa al servidor el estado de los archivos seleccionados.
+
+## Back
+
+Es un sistema realizado en django que recibe información y la muestra.
+
+Realiza calculos para ver al antiguedad del archivo y que se puedan tomar acciones correctivas
